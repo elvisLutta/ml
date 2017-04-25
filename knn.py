@@ -1,4 +1,4 @@
-from math import sqrt
+from mymath import euclidean_distance
 
 
 class Data(object):
@@ -14,15 +14,6 @@ class Data(object):
 
     def set_dist(self, dist):
         self.dist = dist
-
-
-def euclidean_distance(list1, list2):
-# Find the euclidean distance between 2 points
-    sum = 0
-    for i in range(len(list1)):
-        sum += (list1[i] - list2[i]) ** 2
-
-    return sqrt(sum)
 
 
 # Receive a list of Data objects
